@@ -1,79 +1,96 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Photo Gallery App
 
-# Getting Started
+A mobile photo gallery app built with **React Native** that fetches images from [JSONPlaceholder API](https://jsonplaceholder.typicode.com/photos). The app allows users to browse images, mark favorites, and persist those favorites using **Redux Persist**. Offline image caching is handled with **FastImage**, and **React Navigation** is used for navigating through the app's screens.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **Image Fetching**: Fetches images from `https://jsonplaceholder.typicode.com/photos` using **RTK Query** for efficient API requests and caching.
+- **Favorites Management**: Allows users to favorite images, with state management powered by **Redux** and favorites persistence using **Redux Persist**.
+- **Offline Image Caching**: Leverages **FastImage** for optimized offline image caching, providing a smooth experience even without an internet connection.
+- **Navigation**: The app features a bottom tab navigation using **React Navigation** with a custom header for enhanced user experience.
+- **Dark Mode**: Supports a Dark Mode UI, improving accessibility and enhancing the user experience, especially in low-light environments.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Screenshots
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### Light Mode
 
-```bash
-# using npm
-npm start
+#### Home Screen
+![Light Mode Home Screen](https://drive.google.com/file/d/1NOzQurOozl1NAf06a6YtJpJ8K6CnJZIC/view?usp=drive_link)
 
-# OR using Yarn
-yarn start
-```
+#### Details Screen
+![Light Mode Details Screen](https://drive.google.com/file/d/17-emwspKGsQkezKlBSWrJPW-zFBzsjzu/view?usp=drive_link)
 
-## Step 2: Start your Application
+### Dark Mode
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+#### Home Screen
+![Dark Mode Home Screen](https://drive.google.com/file/d/1kRPoIXSlzXvbkeMTuWn-3THSdZGqDT4_/view?usp=drive_link)
 
-### For Android
+#### Details Screen
+![Dark Mode Details Screen](https://drive.google.com/file/d/1wzBR2cPyc_HgnJfN9tYmClhY4A4FNrjv/view?usp=drive_link)
 
-```bash
-# using npm
-npm run android
 
-# OR using Yarn
-yarn android
-```
 
-### For iOS
+## Tech Stack
 
-```bash
-# using npm
-npm run ios
+- **React Native**: Mobile framework for building the app.
+- **RTK Query**: For fetching and caching images from the API.
+- **Redux & Redux Persist**: For state management and persistence of the favorite image list.
+- **FastImage**: For offline image caching and performance improvements.
+- **React Navigation**: For navigating between screens with a bottom tab bar.
+- **Custom Header**: A custom navigation header is implemented for improved navigation experience.
+- **Dark Mode**: Dark mode support based on system settings or a toggle inside the app.
 
-# OR using Yarn
-yarn ios
-```
+## Installation
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/photo-gallery-app.git
+   cd photo-gallery-app
+   ```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Step 3: Modifying your App
+3. Start the app:
+   ```bash
+   npm run start
+   ```
 
-Now that you have successfully run the app, let's modify it.
+## API Used
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+- The app fetches images from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/photos).
+  - Endpoint: `https://jsonplaceholder.typicode.com/photos`
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## State Management
 
-## Congratulations! :tada:
+- **Redux** is used for managing the app's state, including the favorite image list.
+- **Redux Persist** is used to persist the state of favorite images, so they remain available even after the app is closed and reopened.
 
-You've successfully run and modified your React Native App. :partying_face:
+## Image Fetching and Caching
 
-### Now what?
+- **RTK Query** is used to fetch images from the API and handle caching efficiently.
+- **FastImage** is used to handle offline caching of images, improving performance and user experience when the app is used without an internet connection.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+## Navigation
 
-# Troubleshooting
+- **React Navigation** is implemented with a **bottom tab bar**, providing an intuitive way for users to navigate between screens. A custom header is used to enhance navigation aesthetics.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## Screens
 
-# Learn More
+- **Home Screen**: Displays a list of images fetched from the API.
+- **Details Screen**: Displays a details of an image fetched from the API.
+- **Favorites Screen**: Shows a list of favorited images that are persisted across sessions.
 
-To learn more about React Native, take a look at the following resources:
+ 
+## Libraries Used
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- **[React Native](https://reactnative.dev/)**: For building the mobile application.
+- **[Redux](https://redux.js.org/)**: For state management.
+- **[Redux Persist](https://github.com/rt2zz/redux-persist)**: For persisting the Redux state.
+- **[RTK Query](https://redux-toolkit.js.org/rtk-query/overview)**: For efficient API requests and caching.
+- **[FastImage](https://github.com/DylanVann/react-native-fast-image)**: For efficient image caching and offline support.
+- **[React Navigation](https://reactnavigation.org/)**: For app navigation with a bottom tab bar and custom header.
+
+
