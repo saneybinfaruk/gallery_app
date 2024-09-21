@@ -12,22 +12,23 @@ A mobile photo gallery app built with **React Native** that fetches images from 
 
 ## Screenshots
 
+## Screenshots
+
 ### Light Mode
 
 #### Home Screen
-![Light Mode Home Screen](https://docs.google.com/uc?id=1NOzQurOozl1NAf06a6YtJpJ8K6CnJZIC)
+<img src="https://docs.google.com/uc?id=1NOzQurOozl1NAf06a6YtJpJ8K6CnJZIC" alt="Light Mode Home Screen" width="300"/>
 
 #### Details Screen
-![Light Mode Details Screen](https://docs.google.com/uc?id=17-emwspKGsQkezKlBSWrJPW-zFBzsjzu)
+<img src="https://docs.google.com/uc?id=17-emwspKGsQkezKlBSWrJPW-zFBzsjzu" alt="Light Mode Details Screen" width="300"/>
 
 ### Dark Mode
 
 #### Home Screen
-![Dark Mode Home Screen](https://docs.google.com/uc?id=1kRPoIXSlzXvbkeMTuWn-3THSdZGqDT4_)
+<img src="https://docs.google.com/uc?id=1kRPoIXSlzXvbkeMTuWn-3THSdZGqDT4_" alt="Dark Mode Home Screen" width="300"/>
 
 #### Details Screen
-![Dark Mode Details Screen](https://docs.google.com/uc?id=1wzBR2cPyc_HgnJfN9tYmClhY4A4FNrjv)
-
+<img src="https://docs.google.com/uc?id=1wzBR2cPyc_HgnJfN9tYmClhY4A4FNrjv" alt="Dark Mode Details Screen" width="300"/>
 
 
 ## Tech Stack
